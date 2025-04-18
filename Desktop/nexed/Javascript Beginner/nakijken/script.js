@@ -1,46 +1,39 @@
-<!DOCTYPE html>
-<html lang="nl">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Rijlessen Controle</title>
-</head>
-<body>
-    <h1 class="heading" id="mainHeading">Welkom op de rijschool website!</h1>
+document.querySelector('.btn-light').addEventListener('click', function() {
+    const html = document.querySelector('html');
+    if (html.classList.contains('bg-dark')) {
+        html.classList.remove('bg-dark');
+    }
+    html.classList.add('bg-light');
+    localStorage.setItem('theme', 'bg-light');
+});
 
-    <div class="person" id="leonie">
-        <p class="name">Leonie</p>
-        <p class="age">17</p>
-    </div>
+document.querySelector('.btn-dark').addEventListener('click', function() {
+    const html = document.querySelector('html');
+    if (html.classList.contains('bg-light')) {
+        html.classList.remove('bg-light');
+    }
+    html.classList.add('bg-dark');
+    localStorage.setItem('theme', 'bg-dark');
+});
 
-    <div class="person" id="mustafa">
-        <p class="name">Mustafa</p>
-        <p class="age">19</p>
-    </div>
+window.addEventListener('DOMContentLoaded', function () {
+    if(!localStorage.getItem('theme')) {
+        return;
+    }
+    const html = document.querySelector('html');
+    html.classList.add(localStorage.getItem('theme'));
+    
+    const email = doccument.querySelector('#email');
+    const password = document.querySelector('#password');
 
-    <script>
-        // Wacht totdat de HTML is geladen
-        document.addEventListener("DOMContentLoaded", function() {
-            const leonieElement = document.querySelector("#leonie");
-            const mustafaElement = document.querySelector("#mustafa");
+    email.value = this.localStorage.getItem('email', email.value);
+    password.value = this.localStorage.getItem('password', password.value);
+});
 
-            const leonieAge = parseInt(leonieElement.querySelector(".age").textContent);
-            const mustafaAge = parseInt(mustafaElement.querySelector(".age").textContent);
+document.querySelector('#login').addEventListener('click', function() {
+    const email = document.querySelector('#email');
+    const password = document.querySelector('#password');
 
-            const leonieName = leonieElement.querySelector(".name");
-            if (leonieAge >= 18) {
-                leonieName.textContent += " mag beginnen met rijlessen";
-            } else {
-                leonieName.textContent += " moet nog even wachten";
-            }
-
-            const mustafaName = mustafaElement.querySelector(".name");
-            if (mustafaAge >= 18) {
-                mustafaName.textContent += " mag beginnen met rijlessen";
-            } else {
-                mustafaName.textContent += " moet nog even wachten";
-            }
-        });
-    </script>
-</body>
-</html>
+    localStorage.setItem('email', email.value);
+    localStorage.setItem('password', password.value);
+});

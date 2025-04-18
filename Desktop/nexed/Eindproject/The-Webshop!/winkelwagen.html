@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+  <meta charset="UTF-8">
+  <title>Winkelwagen</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <h1>🛒 Jouw Winkelwagen</h1>
+    <a href="index.html">← Terug naar home</a>
+  </header>
+
+  <main>
+    <section id="cartItems" class="product-grid"></section>
+    <p id="totalPrice"></p>
+    <button onclick="placeOrder()">Bestelling plaatsen</button>
+    <button onclick="clearCart()">Winkelwagen legen</button>
+    <p id="confirmation"></p>
+  </main>
+
+  <script src="cart.js"></script>
+</body>
+</html>

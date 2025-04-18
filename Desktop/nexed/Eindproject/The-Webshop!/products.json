@@ -1,0 +1,73 @@
+[
+    {
+      "id": 1,
+      "name": "The Legend of Zelda: Breath of the Wild",
+      "price": 39.99,
+      "description": "Avonturenspel op de Nintendo Switch.",
+      "image": "https://via.placeholder.com/150"
+    },
+    {
+      "id": 2,
+      "name": "Super Mario Odyssey",
+      "price": 49.99,
+      "description": "Platformspel op de Nintendo Switch.",
+      "image": "https://via.placeholder.com/150"
+    },
+    {
+      "id": 3,
+      "name": "Minecraft",
+      "price": 29.99,
+      "description": "Bouw- en avonturenspel op verschillende platforms.",
+      "image": "https://via.placeholder.com/150"
+    },
+    {
+      "id": 4,
+      "name": "The Witcher 3: Wild Hunt",
+      "price": 59.99,
+      "description": "Actie-RPG op verschillende platforms.",
+      "image": "https://via.placeholder.com/150"
+    },
+    {
+      "id": 5,
+      "name": "Stardew Valley",
+      "price": 14.99,
+      "description": "Boerderij simulatie spel op verschillende platforms.",
+      "image": "https://via.placeholder.com/150"
+    },
+    {
+      "id": 6,
+      "name": "Animal Crossing: New Horizons",
+      "price": 49.99,
+      "description": "Levenssimulatie spel op de Nintendo Switch.",
+      "image": "https://via.placeholder.com/150"
+    },
+    {
+      "id": 7,
+      "name": "Final Fantasy VII Remake",
+      "price": 59.99,
+      "description": "Actie-RPG op de PlayStation 4.",
+      "image": "https://via.placeholder.com/150"
+    },
+    {
+      "id": 8,
+      "name": "Overwatch",
+      "price": 39.99,
+      "description": "Team-based shooter op verschillende platforms.",
+      "image": "https://via.placeholder.com/150"
+    },
+    {
+      "id": 9,
+      "name": "The Last of Us Part II",
+      "price": 59.99,
+      "description": "Actie-avontuur spel op de PlayStation 4.",
+      "image": "https://via.placeholder.com/150"
+    },
+    {
+      "id": 10,
+      "name": "God of War",
+      "price": 49.99,
+      "description": "Actie-avontuur spel op de PlayStation 4.",
+      "image": "https://via.placeholder.com/150"
+    }
+  ]
+  
